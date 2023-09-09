@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cards project</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+            /* box-sizing: border-box; */
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            min-height: 1200px;
+            background: #a8ff78;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        /* alignment and justification parent container ke andar krna hota hai */
+        .cards{
+            
+            width: 360px;
+            height: 700px;
+            border: 2px solid black;
+            background-color:  white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+            gap:4px;
+            
+        }
+        
+        .cards img{
+            padding-top: 10px;
+            height: 45% ;
+            transition: all 0.2s linear 0s;
+        }
+        img:hover{
+            transform: scale(1.05);
+        }
+        .text{
+            background-color: lightgreen;
+            padding: 5px;
+            margin: 20px;
+            height: 300px;
+            border-radius: 10px;
+            border: 4px solid black;
+        }
+        .text h1{
+            padding-top: 40px;
+            padding-left: 5px;
+        }
+        .text h3{
+            position: relative;
+            top: 40px;
+            left: 45px;
+            padding-right: 80px;
+            gap: 20px;
+            font-size: 23px;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <img src="qr.png" alt="qr">
+            
+            <div class="text">
+                <h1>Scan this QR to view my profile</h1><hr>
+            <h3>
+                Name: Sachin Sharma <br>
+                Roll No.: 233071 <br>
+                Branch: Btech. CSE
+            </h3>
+            </div>
+        
+    </div>
+    </div>
+</body>
+</html>
